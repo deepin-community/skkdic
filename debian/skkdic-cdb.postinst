@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = configure ]; then
+	update-alternatives --install /usr/share/skk/SKK-JISYO.cdb \
+		SKK-JISYO.cdb /usr/share/skk/SKK-JISYO.L.cdb 60
+fi
+
+#DEBHELPER#

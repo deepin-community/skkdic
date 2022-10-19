@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = configure ]; then
+    update-alternatives --install /usr/share/skk/SKK-JISYO \
+	SKK-JISYO /usr/share/skk/SKK-JISYO.L 60
+    if command -v update-skkdic-yaskkserv >/dev/null 2>&1; then
+	update-skkdic-yaskkserv
+    fi
+    if command -v update-cmigemo-dict >/dev/null 2>&1; then
+	update-cmigemo-dict
+    fi
+fi
+
+#DEBHELPER#

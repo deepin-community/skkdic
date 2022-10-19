@@ -1,0 +1,11 @@
+skkdic for Debian
+----------------------
+
+The skkdic package contains SKK-JISYO.L only.  Other dictionaries are
+provided in the skkdic-extra package.
+
+This package uses the Debian alternatives system.  The generic name of
+the SKK dictionary is SKK-JISYO.  I suggest to install the skktools
+package if you want to make a local dictionary.
+
+ -- Tatsuya Kinoshita <tats@debian.org>, Sun, 13 Aug 2006 21:48:30 +0900

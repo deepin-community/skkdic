@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_update_autotools_config override_dh_autoreconf override_dh_auto_configure override_dh_auto_test override_dh_auto_install override_dh_auto_clean:
+
+override_dh_auto_build: SKK-JISYO.L.cdb SKK-JISYO.L.utf8
+
+%.cdb: %
+	sh debian/make-skkdic-cdb $< $@
+
+%.utf8: %
+	iconv -f euc-jisx0213 -t utf-8 $< | LC_ALL=C sed 's/coding: euc-jp/coding: utf-8/' >$@
+
+override_dh_clean:
+	dh_clean
+	rm -f *.utf8
+	rm -f *.cdb
+	rm -f *.tmp # cdb's intermediate products
+
+get-orig-source:
+	wget -O upstream.tar.gz https://github.com/skk-dev/dict/tarball/master
+	mv -f upstream.tar.gz `LC_ALL=C tar ztvf upstream.tar.gz --utc | perl -ne 'if (/ (\d\d\d\d)-(\d\d)-(\d\d) /) {print "skkdic_$$1$$2$$3.orig.tar.gz\n"; exit}'`

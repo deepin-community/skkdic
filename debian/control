@@ -1,0 +1,72 @@
+Source: skkdic
+Section: utils
+Priority: optional
+Maintainer: Tatsuya Kinoshita <tats@debian.org>
+Build-Depends-Indep: tinycdb
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/debian/skkdic
+Vcs-Git: https://salsa.debian.org/debian/skkdic.git
+Homepage: https://skk-dev.github.io/dict/
+Rules-Requires-Root: no
+
+Package: skkdic
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: skktools, skkdic-cdb, skkdic-extra
+Conflicts: skk (<= 10.39-2)
+Enhances: skkserv
+Multi-Arch: foreign
+Description: standard dictionary file for SKK
+ This package provides `SKK-JISYO', the standard dictionary file for SKK
+ Japanese input systems.  Currently, this package contains the large size
+ dictionary file `SKK-JISYO.L' as the standard dictionary file.
+ .
+ For faster access, install the skkdic-cdb package which provides the
+ constant database (cdb) file of this dictionary.  Other dictionary files,
+ such as zipcode, personal names, small size, are provided by the
+ skkdic-extra package.
+ .
+ To merge or edit dictionaries, install the skktools package.  To use
+ dictionaries more conveniently, several SKK dictionary servers are
+ available, such as dbskkd-cdb and skksearch.
+
+Package: skkdic-extra
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: skktools, skkdic, skkdic-cdb
+Conflicts: skk (<= 10.39-2)
+Enhances: skkserv
+Multi-Arch: foreign
+Description: optional non-standard dictionary files for SKK
+ This package provides various dictionary files, such as `SKK-JISYO.zipcode',
+ `SKK-JISYO.geo', `SKK-JISYO.station', `SKK-JISYO.emoji', `SKK-JISYO.jinmei',
+ `SKK-JISYO.fullname', `SKK-JISYO.law', `SKK-JISYO.pinyin', and so on, except
+ `SKK-JISYO.L' as the standard dictionary file provided by the skkdic package,
+ for SKK Japanese input systems.
+ .
+ To merge or edit dictionaries, install the skktools package.  To use
+ dictionaries more conveniently, several SKK dictionary servers are
+ available, such as dbskkd-cdb and skksearch.
+
+Package: skkdic-cdb
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: skktools, skkdic, skkdic-extra
+Conflicts: dbskkd-cdb (<< 1:1.01-7), dbskkd-cdb-dic
+Enhances: skkserv
+Multi-Arch: foreign
+Description: standard dictionary file for SKK in cdb format for faster access
+ This package provides `SKK-JISYO.cdb', the standard dictionary file for
+ SKK Japanese input systems, converted to constant database (cdb) for
+ faster access.  Currently, this package contains the large size dictionary
+ file `SKK-JISYO.L.cdb' as the standard dictionary file.
+ .
+ Since this dictionary is a cdb file, it requires cdb support for accessing.
+ SKK dictionary servers dbskkd-cdb and skksearch can handle cdb-style
+ dictionaries, but ddskk cannot in itself.
+ .
+ The original plain text version of this dictionary is provided by the
+ skkdic package.  Other dictionary files, such as zipcode, personal names,
+ small size, are provided by the skkdic-extra package.  To merge or edit
+ dictionaries, install the skktools package.

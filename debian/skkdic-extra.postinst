@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = configure ]; then
+    if command -v update-skkdic-yaskkserv >/dev/null 2>&1; then
+	update-skkdic-yaskkserv
+    fi
+fi
+
+#DEBHELPER#

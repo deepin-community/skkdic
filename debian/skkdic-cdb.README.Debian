@@ -1,0 +1,11 @@
+skkdic-cdb for Debian
+----------------------
+
+This package provides a cdb-style dictionary file converted from
+SKK-JISYO.L in skkdic package.
+
+This package uses the Debian alternatives system.  The generic name of
+the cdb style SKK dictionary is SKK-JISYO.cdb.  I suggest to install
+the skktools package if you want to make a local dictionary.
+
+ -- Tatsuya Kinoshita <tats@debian.org>, Sun, 13 Aug 2006 21:48:10 +0900

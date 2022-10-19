@@ -1,0 +1,439 @@
+skkdic (20210106-2+u002) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Mon, 25 Apr 2022 10:16:25 +0800
+
+skkdic (20210106-2) unstable; urgency=medium
+
+  * New patch 010_assoc.patch to fix incorrect words in SKK-JISYO.assoc
+  * Adjust the license text of CC-BY-SA-3.0 in debian/copyright
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Wed, 17 Feb 2021 19:21:49 +0900
+
+skkdic (20210106-1) unstable; urgency=medium
+
+  * New upstream version 20210106
+  * Update debian/copyright
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Wed, 20 Jan 2021 19:29:06 +0900
+
+skkdic (20201226-1) unstable; urgency=medium
+
+  * New upstream version 20201226
+  * Update debian/copyright
+    - SKK-JISYO.pinyin is under GPL-1+
+  * Install SKK-JISYO.pinyin by skkdic-extra
+  * Update description of skkdic-extra
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 27 Dec 2020 09:50:26 +0900
+
+skkdic (20200404-2) unstable; urgency=medium
+
+  * Switch CDBS to dh with debhelper-compat (= 13)
+  * Update description for skkdic-extra
+  * Update Standards-Version to 4.5.1
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Mon, 14 Dec 2020 22:45:01 +0900
+
+skkdic (20200404-1) unstable; urgency=medium
+
+  * New upstream version 20200404
+  * Add debian/upstream/metadata
+  * Add debian/watch with mode=git
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sat, 02 May 2020 12:08:51 +0900
+
+skkdic (20200323-1) unstable; urgency=medium
+
+  * New upstream version 20200323
+  * Install SKK-JISYO.edict2, SKK-JISYO.emoji and SKK-JISYO.ivd
+  * Install SKK-JISYO.L.utf8, converted from SKK-JISYO.L
+  * Install committers.* instead of committers.txt
+  * Update Upstream-Contact to skk-dev
+  * Update debian/copyright
+    - SKK-JISYO.emoji and SKK-JISYO.ivd are under the Unicode License
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Tue, 24 Mar 2020 22:14:27 +0900
+
+skkdic (20200308-1) unstable; urgency=medium
+
+  * Don't exclude *edict*
+  * New upstream version 20200308
+  * Install SKK-JISYO.edict for skkdic-extra
+  * Update debian/copyright
+    - SKK-JISYO.edict is under CC-BY-SA-3.0
+  * Run update-skkdic-yaskkserv when configure in postinst
+  * Run update-cmigemo-dict when configure in postinst
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Thu, 12 Mar 2020 21:16:32 +0900
+
+skkdic (20200229-1) unstable; urgency=medium
+
+  * New upstream version 20200229 (Git master branch, except *edict*)
+  * Drop debian/patches (merged upstream)
+  * Add Rules-Requires-Root: no
+  * Update debian/copyright
+  * Update Standards-Version to 4.5.0
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Fri, 06 Mar 2020 23:27:30 +0900
+
+skkdic (20190217-2) unstable; urgency=medium
+
+  * New patch 010_reiwa.patch to add Japan's new era 令和 (Reiwa)
+    (closes: #926862, #926863)
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Thu, 11 Apr 2019 21:52:37 +0900
+
+skkdic (20190217-1) unstable; urgency=medium
+
+  * New upstream version 20190217
+  * Update debian/copyright
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Mon, 18 Feb 2019 21:49:25 +0900
+
+skkdic (20181229-1) unstable; urgency=medium
+
+  * Update get-orig-source to fetch from GitHub
+  * New upstream version 20181229
+    (Git master branch, except *edict*)
+  * Drop debian/patches (merged upstream)
+  * Update debian/copyright
+  * Update Standards-Version to 4.3.0
+  * Update Homepage from openlab.jp to GitHub Pages
+  * Adjust committers.txt installation
+  * No longer rebuild SKK-JISYO.china_taiwan
+  * Adjust zipcode/README.* installation
+  * Don't use deprecated DEB_DH_INSTALLCHANGELOGS_ARGS
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Tue, 08 Jan 2019 22:30:56 +0900
+
+skkdic (20180127-2) unstable; urgency=medium
+
+  * New patch 010_zipcode.patch
+  * Update debian/copyright
+  * Update Standards-Version to 4.2.1
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Fri, 23 Nov 2018 22:43:24 +0900
+
+skkdic (20180127-1) unstable; urgency=medium
+
+  * New upstream version 20180127
+    (CVS trunk on 2018-01-27, except *edict*)
+  * Update debhelper compat version to 10
+  * Migrate from anonscm.debian.org to salsa.debian.org
+  * Add Multi-Arch: foreign
+  * Update debian/copyright
+  * Update Standards-Version to 4.1.3
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Thu, 08 Feb 2018 19:27:34 +0900
+
+skkdic (20170107-1) unstable; urgency=medium
+
+  * New upstream version 20170107
+  * Update debhelper compat version to 9
+  * Update debian/copyright
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 08 Jan 2017 23:38:21 +0900
+
+skkdic (20160507-1) unstable; urgency=medium
+
+  * Imported Upstream version 20160507
+  * Update debian/copyright
+  * Update Vcs-Browser to https
+  * Update Standards-Version to 3.9.8
+  * Add lintian-overrides to prevent warning of SKK-JISYO.lisp
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sat, 04 Jun 2016 19:54:43 +0900
+
+skkdic (20150422-1) unstable; urgency=medium
+
+  * Imported Upstream version 20150422
+  * Update debian/copyright
+  * Add SKK-JISYO.lisp to skkdic-extra.install
+  * Update Vcs-Browser
+  * Update Standards-Version to 3.9.6
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 26 Apr 2015 12:17:48 +0900
+
+skkdic (20140823-1) unstable; urgency=medium
+
+  * Imported Upstream version 20140823
+  * Drop ruby-interpreter from ruby | ruby-interpreter
+  * Update debian/copyright
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 24 Aug 2014 19:30:26 +0900
+
+skkdic (20131225-1) unstable; urgency=low
+
+  * Imported Upstream version 20131225
+  * Update copyright-format version to 1.0
+  * Update Standards-Version to 3.9.5
+  * Update debian/copyright
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sat, 04 Jan 2014 13:56:08 +0900
+
+skkdic (20130505-2) unstable; urgency=low
+
+  * Do not depend on ruby1.8
+  * Depend on skktools (>= 1.3.2-4~) to build with Ruby 1.9
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Mon, 10 Jun 2013 21:31:52 +0900
+
+skkdic (20130505-1) unstable; urgency=low
+
+  * Imported Upstream version 20130505
+  * Update debian/copyright
+  * Do not install old ChangeLog files
+  * Add Vcs-Git and Vcs-Browser
+  * Update Standards-Version to 3.9.4
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Wed, 08 May 2013 19:38:24 +0900
+
+skkdic (20110529-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2011-05-29, except *edict*)
+  * debian/control, debian/rules: Use ruby1.8 instead of ruby to build
+    SKK-JISYO.china_taiwan.
+  * debian/control:
+    - Set the Homepage field to `http://openlab.jp/skk/dic.html'.
+    - Update Standards-Version to 3.9.2.
+  * debian/copyright: Switch to the DEP-5 format.
+  * Switch to the dpkg-source 3.0 (quilt) format.
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 29 May 2011 11:14:50 +0900
+
+skkdic (20100214-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2010-02-14, except *edict*)
+  * debian/control:
+    - Remove "Noritada Kobayashi" from Maintainer. (closes: #554075)
+    - Move "Tatsuya Kinoshita" from Uploaders to Maintainer.
+    - Update Standards-Version to 3.8.4.
+  * debian/README.source: Renamed from debian/README.Debian-source.
+  * debian/copyright: Updated.
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 14 Feb 2010 20:41:41 +0900
+
+skkdic (20090627-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2009-06-27, except *edict*)
+  * debian/control:
+    - Don't use alternatives in `Enhances:'.
+      (closes: #526504, #526506, #526508, #533992)
+    - Add `${misc:Depends}' to `Depends:'.
+    - Update Standards-Version to 3.8.2.
+  * debian/skkdic.postinst, debian/skkdic-extra.postinst: Don't use a
+    prepended path for update-skkdic-yaskkserv.
+  * debian/copyright: Updated.
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sat, 04 Jul 2009 00:41:02 +0900
+
+skkdic (20071028-2) unstable; urgency=low
+
+  * debian/skkdic.postinst, debian/skkdic-extra.postinst: Run
+    update-skkdic-yaskkserv if it exists. (Closes: #464809)
+  * debian/control:
+    - Move `Homepage:' from Description to the header.
+    - Set Standards-Version to 3.7.3.
+  * debian/copyright: Updated.
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sat, 31 May 2008 14:10:19 +0900
+
+skkdic (20071028-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2007-10-28, except *edict*)
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Sun, 28 Oct 2007 13:42:05 +0900
+
+skkdic (20071010-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2007-10-10, except *edict*)
+  * debian/copyright: Update copyright information for SKK-JISYO.L.
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Wed, 10 Oct 2007 20:47:23 +0900
+
+skkdic (20070930-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2007-09-30, except *edict*)
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Sun, 30 Sep 2007 00:41:53 +0900
+
+skkdic (20070918-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2007-09-18, except *edict*)
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Tue, 18 Sep 2007 01:48:15 +0900
+
+skkdic (20070529-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2007-05-29, except *edict*)
+  * Delete an accidentally added "log" file.
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Tue, 29 May 2007 00:09:18 +0900
+
+skkdic (20070411-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2007-04-11, except *edict*)
+    - New dictionary SKK-JISYO.JIS2004.
+  * debian/copyright:
+    - Bump copyright year to 2007.
+    - Add copyright information for SKK-JISYO.JIS2004.
+  * debian/rules: Pass the `-k' option to dh_installchangelogs so that
+    all of ChangeLog* are installed equally.
+  * debian/skkdic{,-cdb,-extra}.docs: Deleted since their settings are
+    now moved into debian/rules.
+  * debian/skkdic-extra.install: Include SKK-JISYO.JIS2004 to install it.
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Thu, 12 Apr 2007 00:57:06 +0900
+
+skkdic (20061130-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2006-11-30, except *edict*)
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Thu, 30 Nov 2006 23:55:08 +0900
+
+skkdic (20061023-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2006-10-23, except *edict*)
+  * debian/control: Add ruby and skktools to Build-Depends-Indep, which are
+    necessary to build SKK-JISYO.china_taiwan.
+  * debian/rules:
+    - Add a new target `get-orig-source' to create a tarball.
+    - Enable building SKK-JISYO.china_taiwan.
+  * debian/README.Debian-source: New info file explaining how the source
+    tarball was repackaged. (Closes: #393100)
+  * debian/skkdic-extra.install: Include SKK-JISYO.china_taiwan.
+    (Closes: #392882)
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Fri, 27 Oct 2006 20:46:00 +0900
+
+skkdic (20061016-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2006-10-16, except *edict*;
+    closes: #392883)
+  * debian/rules:
+    - Enable cleaning *.tmp files temporarily created by cdb. (Closes: #392881)
+    - Enable installing ChangeLog.{1..3}.
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Mon, 16 Oct 2006 22:24:19 +0900
+
+skkdic (20060813-2) unstable; urgency=low
+
+  * New maintainer, sponsored by Tatsuya Kinoshita <tats@debian.org>.
+  * debian/copyright: Correct name of the upstream maintainer team.
+  * debian/rules: Simplify rules by using CDBS in addition to debhelper.
+  * debian/control:
+    - Improve Enhances as `dbskkd-cdb | skkserv'.
+    - Make Description more user-friendly and add a Homepage line to it.
+    - Add cdbs to Build-Depends.
+    - Make binary packages provide Suggests each other.
+
+ -- Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>  Sat, 14 Oct 2006 07:50:44 +0900
+
+skkdic (20060813-1) unstable; urgency=low
+
+  * New upstream release. (CVS trunk on 2006-08-13, except *edict*.)
+  * New maintainer, with previous maintainer's consent.
+  * debian/skkdic-extra.docs: New file to install READMEs/committers.txt.
+  * debian/skkdic-cdb.docs: Ditto.
+  * debian/control: Add `Enhances: dbskkd-cdb, skksearch' and
+    `Suggests: skktools'.
+  * debian/*README.Debian: Suggest skktools instead of skkdic-conf.
+  * debian/control: Depend on debhelper version 5.
+  * debian/compat: 4 -> 5.
+  * debian/copyright: Updated.
+
+ -- Tatsuya Kinoshita <tats@debian.org>  Sun, 13 Aug 2006 22:05:43 +0900
+
+skkdic (20060610-1) unstable; urgency=low
+
+  * New CVS release 20060610
+  * Follows policy 3.7.2. Use Build-Depends for debhelper.
+  * Set LC_ALL=C for awk. (closes: #343923)
+
+ -- Kenshi Muto <kmuto@debian.org>  Sun, 11 Jun 2006 04:34:06 +0000
+
+skkdic (20051117-1) unstable; urgency=medium
+
+  * New CVS release
+    Removed edict dictionary because it was non-free.
+
+ -- Kenshi Muto <kmuto@debian.org>  Wed, 16 Nov 2005 12:01:39 +0000
+
+skkdic (20051116-1) unstable; urgency=low
+
+  * New upstream release (closes: #287084)
+
+ -- Kenshi Muto <kmuto@debian.org>  Wed, 16 Nov 2005 11:25:27 +0000
+
+skkdic (20040323-3) unstable; urgency=low
+
+  * New maintainer. (closes: #338534)
+
+ -- Kenshi Muto <kmuto@debian.org>  Wed, 16 Nov 2005 10:10:09 +0000
+
+skkdic (20040323-2) unstable; urgency=medium
+
+  * QA upload.
+  * Package is orphaned (see #338534); set maintainer to Debian QA Group.
+  * Acknowledge NMU.  Closes: #308125.
+  * debian/make-skkdic-cdb:
+    - Switch from freecdb to tinycdb.  Closes: #325271.
+    - Remove bash-specific constructs.
+    - Handle filenames containing whitespace.
+  * Switch to debhelper 4.
+  * Remove boilerplate from postinst and prerm scripts.
+  * Conforms to Standards version 3.6.2.
+
+ -- Matej Vela <vela@debian.org>  Sun, 13 Nov 2005 13:50:25 +0100
+
+skkdic (20040323-1.1) unstable; urgency=high
+
+  * Non-Maintainer Upload
+  * Have debian/rules use bash as shell, to allow for bashisms (Closes: #308125)
+
+ -- Jeroen van Wolffelaar <jeroen@wolffelaar.nl>  Fri, 13 May 2005 01:32:10 +0200
+
+skkdic (20040323-1) unstable; urgency=low
+
+  * New upstream release (Closes: Bug#238240)
+
+ -- Takao KAWAMURA <kawamura@debian.org>  Tue, 23 Mar 2004 18:45:02 +0900
+
+skkdic (20020430-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Takao KAWAMURA <kawamura@debian.org>  Thu,  2 May 2002 13:08:58 +0900
+
+skkdic (20011121-1) unstable; urgency=low
+
+  * New upstream release
+  * skkdic-extra: Includes a new dictionarie SKK-JISYO.mazegaki.
+
+ -- Takao KAWAMURA <kawamura@debian.org>  Sun,  2 Dec 2001 13:49:42 +0900
+
+skkdic (20010616-1) unstable; urgency=low
+
+  * New upstream release
+  * skkdic: Changes `today' in SKK-JISYO.L.
+  * skkdic-extra: Includes new dictionaries SKK-JISYO.{jinmei,law,okinawa}.
+
+ -- Takao KAWAMURA <kawamura@debian.org>  Sun, 17 Jun 2001 00:46:06 +0900
+
+skkdic (20010423-1) unstable; urgency=low
+
+  * New upstream release
+  * skkdic-extra: Includes a new dictionary SKK-JISYO.geo.
+  * (README.Debian): Doesn't refer to skkdic-conf. (Closes:Bug#96054)
+
+ -- Takao KAWAMURA <kawamura@debian.org>  Sun,  6 May 2001 12:15:34 +0900
+
+skkdic (20001212-1) unstable; urgency=low
+
+  * Initial Release.
+  * Split the old skkdic package into the skkdic and the skkdic-extra
+    package.
+
+ -- Takao KAWAMURA <kawamura@debian.org>  Sun, 10 Dec 2000 12:01:04 +0900
