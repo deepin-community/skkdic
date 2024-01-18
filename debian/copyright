@@ -522,13 +522,13 @@ License: permissive-configure
  gives unlimited permission to copy, distribute and modify it.
 
 Files: zipcode/SKK-JISYO.office.zipcode zipcode/SKK-JISYO.zipcode zipcode/words.zipcode
-Copyright: 1998-2020, JAPAN POST Co., Ltd.
+Copyright: 1998-2022, JAPAN POST Co., Ltd.
            2000, SKK Development Team <skk@ring.gr.jp>
 License: public-domain-zipcode
  Public domain dictionary.  Share and enjoy.
 
 Files: debian/*
-Copyright: 2006-2021, Tatsuya Kinoshita <tats@debian.org>
+Copyright: 2006-2023, Tatsuya Kinoshita <tats@debian.org>
            2006-2007, Noritada Kobayashi <nori1@dolphin.c.u-tokyo.ac.jp>
            2005-2006, Kenshi Muto <kmuto@debian.org>
            2005, Matej Vela <vela@debian.org>

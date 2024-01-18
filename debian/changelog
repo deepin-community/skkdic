@@ -1,8 +1,11 @@
-skkdic (20210106-2+u002) UNRELEASED; urgency=medium
+skkdic (20230109-1) unstable; urgency=medium
 
-  * update
+  * New upstream version 20230109
+  * Drop debian/patches
+  * Update Standards-Version to 4.6.2
+  * Update debian/copyright
 
- -- Tatsuya Kinoshita <tats@debian.org>  Mon, 25 Apr 2022 10:16:25 +0800
+ -- Tatsuya Kinoshita <tats@debian.org>  Mon, 09 Jan 2023 09:17:44 +0900
 
 skkdic (20210106-2) unstable; urgency=medium
 
